@@ -1,0 +1,28 @@
+{
+    "accuracy": 1.0,
+    "precision_weighted": 1.0,
+    "recall_weighted": 1.0,
+    "f1_weighted": 1.0,
+    "per_class": {
+        "0": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+        },
+        "1": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            1329,
+            0
+        ],
+        [
+            0,
+            3
+        ]
+    ]
+}

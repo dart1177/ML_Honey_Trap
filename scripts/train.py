@@ -41,12 +41,12 @@ def load_data(config_path: str):
     Returns:
         list: List of parsed session dictionaries.
     """
-    dataset_path = "data/shell_dataset"
+    dataset_path = "data/shell_dataset/sessions"
     if os.path.exists(dataset_path):
         try:
             ds = load_from_disk(dataset_path)
             sessions = []
-            for item in ds["train"]:
+            for item in ds:
                 sessions.append({
                     "session_id": item.get("id", "unknown"),
                     "commands": item.get("commands", []),

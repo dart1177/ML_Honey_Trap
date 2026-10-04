@@ -41,7 +41,8 @@ class ThreatClassifier:
             max_depth=xgb_params.get("max_depth", 6),
             learning_rate=xgb_params.get("learning_rate", 0.1),
             use_label_encoder=False,
-            eval_metric="mlogloss"
+            objective="multi:softmax",
+            num_class=3
         )
 
     def train(self, X_train: np.ndarray, y_train: np.ndarray, X_val: Optional[np.ndarray] = None, y_val: Optional[np.ndarray] = None) -> Dict[str, float]:

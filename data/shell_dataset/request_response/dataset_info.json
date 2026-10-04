@@ -1,0 +1,66 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "request_response",
+  "dataset_name": "shell-attack-evolution-dataset",
+  "dataset_size": 7280843,
+  "description": "",
+  "download_size": 19735741,
+  "features": {
+    "session_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "period": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "turn_index": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "command": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "response": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "system_change": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "severity_vi": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "response_source": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 27016584,
+  "splits": {
+    "curated": {
+      "name": "curated",
+      "num_bytes": 1136307,
+      "num_examples": 1489,
+      "dataset_name": "shell-attack-evolution-dataset"
+    },
+    "vm_replay_2021_2022": {
+      "name": "vm_replay_2021_2022",
+      "num_bytes": 6144536,
+      "num_examples": 1512,
+      "dataset_name": "shell-attack-evolution-dataset"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
